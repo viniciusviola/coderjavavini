@@ -170,34 +170,34 @@
 //     numero = parseInt(prompt("Informe um número maior que zero: "))
 // }
 
-let numero = parseInt(prompt("Informe um número maior entre 1 e 100: "))
+// let numero = parseInt(prompt("Informe um número maior entre 1 e 100: "))
 
-switch (numero){
-    case numero >= 1 && numero <= 19:
-        console.log("Família dos 10")
-        break;
-    case numero >= 20 && numero <= 29:
-        console.log("Família dos 20")
-        break;
-    case numero >= 30 && numero <= 39:
-        console.log("Família dos 30")
-        break;
-    case numero >= 40 && numero <= 49:
-        console.log("Família dos 40")
-        break;
-    case numero >= 50 && numero <= 59:
-        console.log("Família dos 50")
-        break;
-    case numero >= 60 && numero <= 69:
-        console.log("Família dos 60")
-        break;
-    case numero >= 70 && numero <= 79:
-        console.log("Família dos 70")
-        break;
-    case numero >= 80 && numero <= 89:
-        console.log("Família dos 80")
-        break;
-    case numero >= 90 && numero <= 99:
-        console.log("Família dos 90")
-        break;
-}   
+// switch (numero){
+//     case numero >= 1 && numero <= 19:
+//         console.log("Família dos 10")
+//         break;
+//     case numero >= 20 && numero <= 29:
+//         console.log("Família dos 20")
+//         break;
+//     case numero >= 30 && numero <= 39:
+//         console.log("Família dos 30")
+//         break;
+//     case numero >= 40 && numero <= 49:
+//         console.log("Família dos 40")
+//         break;
+//     case numero >= 50 && numero <= 59:
+//         console.log("Família dos 50")
+//         break;
+//     case numero >= 60 && numero <= 69:
+//         console.log("Família dos 60")
+//         break;
+//     case numero >= 70 && numero <= 79:
+//         console.log("Família dos 70")
+//         break;
+//     case numero >= 80 && numero <= 89:
+//         console.log("Família dos 80")
+//         break;
+//     case numero >= 90 && numero <= 99:
+//         console.log("Família dos 90")
+//         break;
+// }   
