@@ -305,32 +305,134 @@
 
 // divisivel(num_1,num_2)
 
-let ano = parseInt(prompt("Informe seu ano de nascimento:"))
-let mes = parseInt(prompt("Informe seu mês de nascimento:"))
-let dia = parseInt(prompt("Informe seu dia de nascimento:"))
+// let ano = parseInt(prompt("Informe seu ano de nascimento:"))
+// let mes = parseInt(prompt("Informe seu mês de nascimento:"))
+// let dia = parseInt(prompt("Informe seu dia de nascimento:"))
 
-const idade = (ano, mes, dia) => {
-    var dataAtual = new Date();
-    const anoAtual = dataAtual.getFullYear();
-    const mesAtual = dataAtual.getMonth() + 1;
-    const diaAtual = dataAtual.getDate();
-    let idadeA = anoAtual - ano
-    let idadeM = mesAtual - mes
-    let idadeD = diaAtual - dia
+// const idade = (ano, mes, dia) => {
+//     var dataAtual = new Date();
+//     const anoAtual = dataAtual.getFullYear();
+//     const mesAtual = dataAtual.getMonth() + 1;
+//     const diaAtual = dataAtual.getDate();
+//     let idadeA = anoAtual - ano
+//     let idadeM = mesAtual - mes
+//     let idadeD = diaAtual - dia
 
-    if (idadeD < 0){
-        idadeM --
-        idadeD = idadeD + new Date(anoAtual, mesAtual, 0).getDate()
-    }
+//     if (idadeD < 0){
+//         idadeM --
+//         idadeD = idadeD + new Date(anoAtual, mesAtual, 0).getDate()
+//     }
 
-    if (idadeM < 0){
-        idadeA --
-        idadeM = idadeM + 12
-    }
+//     if (idadeM < 0){
+//         idadeA --
+//         idadeM = idadeM + 12
+//     }
 
-    console.log('Anos: ', idadeA)
-    console.log('Meses: ',idadeM)
-    console.log('Dias: ', idadeD)
+//     console.log('Anos: ', idadeA)
+//     console.log('Meses: ',idadeM)
+//     console.log('Dias: ', idadeD)
+// }
+
+// idade(ano, mes, dia)
+
+// function xicara(c, f, p, cp){
+//     this.cor = c;
+//     this.forma = f;
+//     this.peso = p;
+//     this.capacidade = cp
+// }
+
+// const xicara1 = new xicara("Branco", "Quadrada",10,100)
+
+// let fruta = {
+//     nome: "Pera",
+//     cor: "Verde",
+//     peso: 5,
+//     tipo: "Pé de pera"
+// }
+
+// console.log(fruta.nome.length)
+// console.log(fruta.cor.toLowerCase())
+// console.log(fruta.tipo.toUpperCase())
+
+// class pessoa {
+//     constructor(nome, sobrenome, idade){
+//         this.nome = nome,
+//         this.sobrenome = sobrenome,
+//         this.idade = idade
+//     }
+
+//     apresentar = () => {
+
+//         console.log()
+//     }
+
+// }
+
+// class alimento {
+//     constructor(nome, cor, peso, tipo){
+//         this.nome = nome,
+//         this.cor = cor,
+//         this.peso = peso,
+//         this.tipo = tipo
+//     }
+
+//     apresentar = () => {
+//         console.log(`O alimento ${this.nome} tem a cor ${this.cor}, o peso ${this.peso} e é do tipo ${this.tipo}`)
+//     }
+// }
+
+// const alimento1 = new alimento("Arroz", "Branco", 5, "Grão")
+// const alimento2 = new alimento("Couve", "Verde", 2, "Hortaliça")
+
+// alimento1.apresentar()
+// alimento2.apresentar()
+
+const arrayNumeros = [1, 2, 3, 4]
+
+arrayNumeros.push(80);
+
+arrayNumeros.unshift("Maria") //adiciona no final
+
+arrayNumeros.pop()//remove último elemento do array
+
+arrayNumeros.shift()//remove o primeiro elemento do array
+
+arrayNumeros.splice(1, 2) //splice(a partir de qual posição?, quantos?)
+
+const caes = ["Puppy", "Fiona", "Thor", "Salsicha"];
+const gatos = ["Fifi", "Lion"];
+
+const caesJoin = caes.join("\n");
+console.log(caesJoin);
+
+// Join
+
+const caesConcat = caes.concat(gatos);
+console.log(caesConcat)
+
+const nomes = ["Rita", "Pedro", "Miguel", "Ana"]
+
+const nomesSliced = nomes.slice(2, 4)
+
+const nReverse = [1, 5, 9, 10]
+
+nReverse.reverse();
+console.log(nReverse);
+
+// Includes()
+
+const pesquisa = "Olá, mundooooo!";
+let termo = "mundo";
+
+
+if (pesquisa.includes(termo)) {
+    console.log("Olá!");
 }
 
-idade(ano, mes, dia)
+//IndexOf
+// Se não existir no array retorna -1
+const frutas = ["maçã", "banana", "morango"];
+let indiceMorango = frutas.indexOf("morango");
+console.log(indiceMorango);
+
